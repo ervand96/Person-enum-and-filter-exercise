@@ -49,33 +49,33 @@ const persons = [{
     }
 ];
 
-function findPersonByName(name) {
-    const people = persons.filter(arr => arr.firsName == name);
+function findPersonByName(name, array) {
+    const people = array.filter(arr => arr.firsName == name);
     return people;
 }
 
-function peopleAge(age, people) {
-    const peopleAge = people.filter(ar => ar.age < age);
-    return peopleAge;
+function findPeopleByAge(age, array) {
+    const people = array.filter(ar => ar.age < age);
+    return people;
 
 }
 
-function proff(professions, people) {
-    const peopleProff = people.find(arra => arra.profession === professions);
-    return peopleProff
+function findPeopleByProfession(profession, array) {
+    const people = array.find(array => array.profession === profession);
+    return people
 }
 
-function profession() {
-    const people = findPersonByName("Vazgen");
-    const agePeople = peopleAge(25, people);
-    const peopleProff = proff(Professions.Developer, agePeople);
-    return peopleProff.firsName + " " + peopleProff.lastName + " " + peopleProff.age + " " + peopleProff.profession;
+function createPerson() {
+    const peopleByName = findPersonByName("Vazgen", peopleByName);
+    const peopleByAge = findPeopleByAge(25, peopleByName);
+    const peopleByProfession = findPeopleByProfession(Professions.Developer, peopleByAge);
+    return peopleByProfession.firsName + " " + peopleByProfession.lastName + " " + peopleByProfession.age + " " + peopleByProfession.profession;
 }
 
-function creatPerson() {
+function showPerson() {
     const div = document.querySelector('.people');
     const span = document.createElement('span');
     div.append(span);
-    span.innerHTML = profession();
+    span.innerHTML = createPerson();
 }
-creatPerson();
+showPerson();
