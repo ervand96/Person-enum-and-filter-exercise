@@ -49,7 +49,7 @@ const persons = [{
     }
 ];
 
-function peopleName(name) {
+function findPersonByName(name) {
     const people = persons.filter(arr => arr.firsName == name);
     return people;
 }
@@ -66,7 +66,7 @@ function proff(professions, people) {
 }
 
 function profession() {
-    const people = peopleName("Vazgen");
+    const people = findPersonByName("Vazgen");
     const agePeople = peopleAge(25, people);
     const peopleProff = proff(Professions.Developer, agePeople);
     return peopleProff.firsName + " " + peopleProff.lastName + " " + peopleProff.age + " " + peopleProff.profession;
