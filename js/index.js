@@ -66,7 +66,7 @@ function findPeopleByProfession(profession, array) {
 }
 
 function createPerson() {
-    const peopleByName = findPersonByName("Vazgen", peopleByName);
+    const peopleByName = findPersonByName("Vazgen", persons);
     const peopleByAge = findPeopleByAge(25, peopleByName);
     const peopleByProfession = findPeopleByProfession(Professions.Developer, peopleByAge);
     return peopleByProfession.firsName + " " + peopleByProfession.lastName + " " + peopleByProfession.age + " " + peopleByProfession.profession;
