@@ -57,7 +57,6 @@ function findPersonByName(name, array) {
 function findPeopleByAge(age, array) {
     const people = array.filter(ar => ar.age < age);
     return people;
-
 }
 
 function findPeopleByProfession(profession, array) {
