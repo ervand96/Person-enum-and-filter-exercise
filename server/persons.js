@@ -1,0 +1,49 @@
+export default [{
+        "firsName": "Kirakos",
+        "lastName": "Kirakosyan",
+        "age": 30,
+        "profession": "HR"
+    },
+    {
+        "firsName": "Vazgen",
+        "lastName": "Vazgenyan",
+        "age": 18,
+        "profession": "Developer"
+    },
+    {
+        "firsName": "Hamlet",
+        "lastName": "Hamletyan",
+        "age": 18,
+        "profession": "Manager"
+    },
+    {
+        "firsName": "Grigor",
+        "lastName": "Grigoryan",
+        "age": 18,
+        "profession": "Marketing"
+    },
+    {
+        "firsName": "Vazgen",
+        "lastName": "Hamletyan",
+        "age": 18,
+        "profession": "QA"
+    },
+    {
+        "firsName": "Vazgen",
+        "lastName": "Aperyan",
+        "age": 18,
+        "profession": "HR"
+    },
+    {
+        "firsName": "Vazgen",
+        "lastName": "Karapetkyan",
+        "age": 18,
+        "profession": "Developer"
+    },
+    {
+        "firsName": "Vazgen",
+        "lastName": "Mkoyan",
+        "age": 18,
+        "profession": "Manager"
+    }
+]
